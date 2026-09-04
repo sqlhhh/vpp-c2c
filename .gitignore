@@ -1,0 +1,33 @@
+# ---- secrets: never commit ----
+.env
+.env.local
+certs/*
+!certs/.gitkeep
+*.pem
+*.key
+*-private.pem.key
+*-certificate.pem.crt
+
+# ---- runtime output ----
+*.log
+pipeline.log
+docs/evidence/**/*.mp4
+
+# ---- python ----
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# ---- environments ----
+.venv/
+venv/
+env/
+
+# ---- editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

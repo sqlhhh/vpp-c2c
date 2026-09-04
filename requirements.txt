@@ -1,0 +1,14 @@
+# VPP C2C pipeline dependencies.
+# This file is the arbiter for "works on my machine" disputes (risk #5).
+# Do not add a dependency without PM sign-off.
+
+flask>=3.0              # Block 0  - mock SolarEdge server
+requests>=2.31          # Block 1  - HTTP to the vendor cloud
+APScheduler>=3.10       # Block 2  - the 5-minute poll schedule
+python-dotenv>=1.0      # all      - reads .env, keeps secrets out of the repo
+paho-mqtt>=2.0          # Block 4  - MQTT publisher (NOTE: 2.x changed the
+                        #            callback signatures vs 1.x - use CallbackAPIVersion)
+pytest>=8.0             # all      - the test suite CI runs
+
+# Added in Phase 6, not before:
+# influxdb-client>=1.40
