@@ -1,7 +1,6 @@
 # VPP Cloud-to-Cloud Smart Inverter Integration
 
-<!-- After creating the GitHub repo, replace OWNER with the org/user name: -->
-[![CI](https://github.com/OWNER/vpp-c2c/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/vpp-c2c/actions/workflows/ci.yml)
+[![CI](https://github.com/sqlhhh/vpp-c2c/actions/workflows/ci.yml/badge.svg)](https://github.com/sqlhhh/vpp-c2c/actions/workflows/ci.yml)
 
 CCNY Grove School of Engineering · Senior Design II · Team 2
 
