@@ -114,6 +114,10 @@ UTF-8 JSON, one object per reading. **Identical schema both sides** — only `da
 
 * AWS IoT endpoint, Thing, certificate, private key, root CA, and the `gateway/*` policy.
 * This document, and any change to it, before it takes effect.
+* Notice that **Team 2 runs its own Raspberry Pi** for the push path (`pi/bridge.py`, writes one
+  Modbus register on command). It is a separate unit from Team 1's Pi: ours only *writes*, theirs
+  only *reads*. Neither Pi is wired to the inverter without the lab-tech sign-off in
+  `command_contract.md` §4.
 * Two facts from our vendor research, useful regardless of what we sign:
   * **RS-485 is on port 2**, not port 1.
   * **Modbus TCP is on port 1502**, not the standard 502.
