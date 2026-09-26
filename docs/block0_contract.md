@@ -12,6 +12,7 @@ is the bug.
 > implementation that satisfies this contract stays, the other is deleted rather than merged.
 > The suite is now **52 tests** (plus 6 repo-health), not 23; every place that quotes "23 tests"
 > needs updating (`SKILL.md` §5/§17 F8, `VPP_C2C_BUILD_MANUAL.md` Phase 0/1, the Phase 10 numbers slide).
+> *Resolved 2026-09-26: `docs/SKILL.md` and `docs/VPP_C2C_BUILD_MANUAL.md` now quote 52; the numbers slide is still to do.*
 
 ---
 
@@ -162,6 +163,9 @@ requests, so a long-running soak shows a genuinely drifting SOC rather than a ra
 Found while rebuilding, on 2026-09-08. The mock follows the **real SolarEdge API** in all three
 cases, because the project's whole premise is that swapping to the real cloud is one ENV var. That
 means **Block 3's spec is what needs the edit — before Gina writes it**, not after.
+
+**Resolved 2026-09-26:** all three are corrected in `docs/SKILL.md` §5 Blocks 2–3 and §8. Kept
+here as the reasoning behind the field map.
 
 ### 6.1 Grid and battery sign — the one that will silently corrupt the dashboard
 
