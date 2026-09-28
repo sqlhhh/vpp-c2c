@@ -365,7 +365,14 @@ approved.** Candidates are the three direct-push vendors, none of which meets al
 |---|---|---|
 | SMA | REST (GridControl API) | RS-485 needs an aftermarket card; Modbus TCP/UDP only, no native RTU |
 | Victron | MQTT (VRM cloud broker) | battery/off-grid architecture, not grid-tie; no RS-485 on Cerbo GX (Modbus TCP yes) |
-| GoodWe | REST (Open API) | closest to SolarEdge/Fronius, usually RS-485 + Modbus — requirements fit and API access NOT yet verified |
+| GoodWe | REST (Open API) | closest to SolarEdge/Fronius, usually RS-485 + Modbus — but the SEMS OpenAPI is for installer ("organization") accounts only; thin US line-up |
+| **EcoFlow STREAM Microinverter** (added 09-27) | REST + MQTT (official developer API, accessKey/secretKey; set commands e.g. `base_load_power`) | **$369**, US 120 V plug-in, UL1741, 16–60 V DC input (bench-supply friendly). **No RS-485/Modbus** → Team 1 cannot read it |
+| **Growatt MIN 3000TL-XH-US** (added 09-27) | REST (official OpenAPI v1, token; `min_write_parameter`) | **$989**, over a $500 budget. Has RS-485/Modbus → the one pick that serves BOTH teams. Token self-serve or via installer |
+
+09-27 access/cost check on the original three: SMA's API bills a monthly per-system fee and needs a
+Data Manager / Home Manager box (a local device) and only offers a feed-in limit; Victron needs
+MultiPlus + GX, well over $1,000; GoodWe's API is installer-only. At a ~$500 budget EcoFlow is the
+only clean direct-cloud fit; at ~$1,000 Growatt also keeps Team 1 on the same unit.
 
 **Still open:** which of the three; one shared unit with Team 1 or two (the 09-04 "buy what Team 1
 bought" decision predates this and may conflict — Team 1 reads RS-485/Modbus, which SMA and
